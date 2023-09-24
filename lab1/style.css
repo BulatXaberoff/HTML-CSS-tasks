@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Tenor Sans';
+  src: url('fonts/tenor.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  background: #F3EFEA;
+}
+p{
+  color: #323232;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 27px */
+}
+a{
+  margin: 10px;
+}
+.container_desription_button{
+  width: 245px;
+  height: 60px;
+  margin-top: 74px;
+  background: #A1B29F;
+  flex-shrink: 0;
+
+  color: #F6F6F6;
+  text-align: right;
+  /* Text */
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.container_desription_logo_ref{
+  margin-top: 74px;
+  margin-left: 411px;
+}
+.header__list{
+  border-bottom: 1px double black; /* Параметры границы */
+}
+
+.tenor-sans {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.justify_content_around {
+  justify-content: space-around;
+  
+}
+
+.justify_content_center {
+  justify-content: center;
+}
+
+.align_items_center {
+  align-items: center;
+  list-style-type: none;
+}
+.header__item {
+  margin:auto,auto;
+}
+
+.header__logo-pic {
+  width: 100px;
+}
+
+.container_image {
+  width: 45%;
+}
+
+.container_image .header__logo-pic {
+  width: 100%;
+}
+
+.light_background {
+  background: #e3dace;
+}
+
+.centered_div {
+  margin: 0 auto;
+}
+
+.light_background .centered_div {
+  width: 80%;
+}
+
+.centered_div .services-descr {
+  padding-left: 40px;
+}
+
+.card { 
+  width: 80%;
+  border: 6px solid green;
+  padding: 7px;
+  margin: 50px auto;
+  height: 600px;
+}
+
+.card .card-border {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.card .card-border .card-border_inner {
+  width: 70%;
+}
+
+.card .card-border .card-border_inner .str_h {
+  margin: 0;
+  text-align: center;
+}
+
+.card .card-border .card-border_inner img {
+  position: absolute;
+  right: 80px;
+  bottom: 50px;
+  width: 200px;
+  opacity: 0.6;
+}
+
+.d_block {
+  display: block;
+}
+
+.container_desription{
+  margin: 37px auto;
+}
+
+.container_1_description_answers{
+  margin-top: 100px;
+  display: flex;
+}
+.container_1_description_answer{
+  margin:auto;
+  border-bottom: 1px double black;
+}

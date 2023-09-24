@@ -3,40 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Мебель на заказ</title>
 </head>
 <body>
-    <header class = "header">
-        <div class="containe header__container">
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Мастер-классы</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Мебель на заказ</a>
-                    </li>
-                    <li class="header__item">
-                        <img src=".svg" class="header__logo-pic" alt="logo">
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Контакты</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">О нас</a>
-                    </li>
-                </ul>
-            </nav>       
+    <header class="header">
+      <div class="header__list d_flex justify_content_around">
+        <ul class="d_flex align_items_center">
+          <li class="header__item">
+              <a href="#" class="header__link">Мастер-классы</a>
+          </li>
+          <li class="header__item">
+              <a href="#" class="header__link">Мебель на заказ</a>
+          </li>
+        </ul>
+        
+        <div class="header__item">
+          <img src="img/logo.svg" class="header__logo-pic" alt="logo">
         </div>
-        <div class="container">
+
+        <ul class="d_flex align_items_center">
+          <li class="header__item">
+              <a href="#" class="header__link">Контакты</a>
+          </li>
+          <li class="header__item">
+              <a href="#" class="header__link">О нас</a>
+          </li>
+        </ul>
+    </div>
+    </header>
+        <div class="container d_flex justify_content_center align_items_center">
             <div class="container_image">
-                <img src=".svg" class="header__logo-pic" alt="logo">
+                <img src="img/1.png" class="header__logo-pic" alt="logo">
             </div>
             <div class="container_desription">
                 <p>Столярная мастерская NIKASON BRAND</p>
-                <h1 class="str_h">Изготовление и реставрация мебели</h1>
+                <h1 class="str_h tenor-sans">Изготовление и реставрация мебели</h1>
                 <p>Авторская мебель ручной работы, сделанная с душой и трепетом.</p>
-                <button class="container_desription_button"></button>
+                <button class="container_desription_button">
+                  Смотреть услуги
+                </button>
                 <div class="container_desription_logo_ref">
                     <a href="#"><img src="#" alt="tg"></a>
                     <a href="#"><img src="#" alt="inst"></a>
@@ -46,8 +52,8 @@
         </div>
         <div class="container_1">
             <div class="container_1_description">
-                <h1 class="str_h">NIKASON BRAND это</h1>
-                <div>
+                <h1 class="str_h tenor-sans">NIKASON BRAND это</h1>
+                <div class="container_1_description_answers">
                     <div class="container_1_description_answer">
                         <p>Производство авторской мебели из массива</p>
                     </div>
@@ -122,56 +128,71 @@
         </div>
         <div class="look_at_me">
             <h1 class="str_h">Посмотрите видео о нас</h1>
-            <video></video>
+            <!-- <iframe id="youtubeiframe417077694" width="100%" height="540px" src="https://youtube.com/embed/MlaGpRXoMPc?rel=0&amp;fmt=18&amp;html5=1&amp;showinfo=0" frameborder="0" allowfullscreen="" style="height: 652.5px;"></iframe> -->
         </div>
         <div class="services">
             <h1 class="str_h">Наши услуги</h1>
-            <div class="services-img">
-                <img src="#" alt="мебель">
+            
+            <div class="light_background">
+              <div class="centered_div d_flex align_items_center">
+                <div class="services-img">
+                    <img src="img/2.png" alt="мебель">
+                </div>
+                <div class="services-descr">
+                    <h3>Мебель на заказ</h3>
+                    <p>Мебель под заказ по индивидуальным размерам это гарантия отличного качества, долговечность, экологичность и эксклюзивность наших изделий. 
+                        Возможность создания своего неповторимого стиля, уникальность и неповторимость каждого изделия.</p>
+                    <button class="services-button">Заказать мебель</button>
+                </div>
+              </div>
             </div>
-            <div class="services-descr">
-                <h3>Мебель на заказ</h3>
-                <p>Мебель под заказ по индивидуальным размерам это гарантия отличного качества, долговечность, экологичность и эксклюзивность наших изделий. 
-                    Возможность создания своего неповторимого стиля, уникальность и неповторимость каждого изделия.</p>
-                <button class="services-button">Заказать мебель</button>
+
+            <div class="light_background">
+              <div class="centered_div d_flex align_items_center">
+                <div class="services-img">
+                    <img src="#" alt="мебель">
+                </div>
+                <div class="services-descr">
+                    <h3>Мастер-классы</h3>
+                    <p>Что делать, если память о предках хочется сохранить, но к вашему интерьеру старая и испорченная мебель не подходит? 
+                        Правильно, отреставрировать его и наслаждаться не только обновлённым видом мебели, но и с теплотой помнить, что эта мебель была сделана талантливыми предками.
+                        </p>
+                    <button class="services-button">Купить мастер-класс</button>
+                </div>
+              </div>
             </div>
-            <div class="services-img">
-                <img src="#" alt="мебель">
-            </div>
-            <div class="services-descr">
-                <h3>Мастер-классы</h3>
-                <p>Что делать, если память о предках хочется сохранить, но к вашему интерьеру старая и испорченная мебель не подходит? 
-                    Правильно, отреставрировать его и наслаждаться не только обновлённым видом мебели, но и с теплотой помнить, что эта мебель была сделана талантливыми предками.
-                    </p>
-                <button class="services-button">Купить мастер-класс</button>
-            </div>
+            
+            
+            
         </div>
+
         <div class="card">
             <div class="card-border">
                 <div class="card-border_inner">
                     <h1 class="str_h">Гарантия качества мебели от NIKASON BRAND</h1>
                     <p>На каждое изделие ставим авторский логотип (клеймо) как знак качества и узнаваемости мастера. Таким образом мастер несёт ответственность за каждое изделие помеченное печатью. Есть гарантия на 12 месяцев. </p>
-                    <div class="card-border-logo"><img src="#" alt="визитка"></div>
+                    <div class="card-border-logo"><img src="img/logo.svg" alt="визитка"></div>
                 </div>
             </div>
         </div>
-    </header>
+
     <footer class="footer">
-        <div class="footer-inner">
+        <div class="footer-inner d_flex">
             <div>
                 ИП Колодезников-Матчитов Н.И.<br>
-                  ИНН 143515646663</div>
-            <div>
-                <a href="#">Мастер-классы</a>
-                <a href="#">Мебель на заказ</a>
+                  ИНН 143515646663
             </div>
             <div>
-                <a href="#">Контакты</a>
-                <a href="#">О нас</a>
+                <a href="#" class="d_block">Мастер-классы</a>
+                <a href="#" class="d_block">Мебель на заказ</a>
             </div>
             <div>
-                <a href="#">Политика кофиденциальности</a>
-                <a href="#">Договор оферты</a>
+                <a href="#" class="d_block">Контакты</a>
+                <a href="#" class="d_block">О нас</a>
+            </div>
+            <div>
+                <a href="#" class="d_block">Политика кофиденциальности</a>
+                <a href="#" class="d_block">Договор оферты</a>
             </div>
             <small class="footer-inner__link">
               <a href="#"><img src="#" alt="inst"></a>
