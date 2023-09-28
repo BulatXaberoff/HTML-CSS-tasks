@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>information_about_us</title>
-    </head> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>О нас</title>
+</head>
 <body>
-    <header class = "header">
-        <div class="containe header__container">
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Мастер-классы</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Мебель на заказ</a>
-                    </li>
-                    <li class="header__item">
-                        <img src=".svg" class="header__logo-pic" alt="logo">
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Контакты</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">О нас</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="header">
+        <div class="header__list d_flex justify_content_around">
+            <ul class="d_flex align_items_center">
+                <li class="header__item">
+                <a href="#" class="header__link">Мастер-классы</a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">Мебель на заказ</a>
+            </li>
+            </ul>
             
+            <div class="header__item">
+            <img src="img/logo.svg" class="header__logo-pic" alt="logo">
+            </div>
+
+                <ul class="d_flex align_items_center">
+            <li class="header__item">
+                <a href="#" class="header__link">Контакты</a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">О нас</a>
+            </li>
+            </ul>
         </div>
+    </header>
         <div class="history_header">
             <h1 class="str_h">История создания мастерской</h1>
             <h1 class="str_h">NIKASON BRAND</h1>
-            <img class="history_header_pic" src="#" alt="history">
+            <img class="history_header_pic" src="img/info/Rectangle 83.png" alt="history">
             
         </div>
 
@@ -49,7 +53,7 @@
                 <p>Самой старинной мебели для реставрации </p>
             </div>
             <div class="history_description_info">
-                <img src="./img/svg/odigo-logo.svg" class="history_description_info_pic" alt="history">
+                <img src="img/info/IMG_4420 1.png" class="history_description_info_pic" alt="history">
                 <div class="history_description_info_text">
                     <h2>Никита Колодезников-Матчитов</h2>
                     <p>Основатель мастерской</p>
@@ -68,10 +72,10 @@
                 <h1 class="str_h">СМИ о нас</h1>
                 <p>О нашей мастерской пишут многие издания Якутии</p>
                 <div class="history_description_news_photos">
-                    <img src="#" alt="1">>
-                    <img src="#" alt="2">>
-                    <img src="#" alt="3">>
-                    <img src="#" alt="4">>
+                    <img src="img/info/IMG_5597 1.png" alt="1">>
+                    <img src="img/info/IMG_5605 1.png" alt="2">>
+                    <img src="img/info/IMG_5604 1.png" alt="3">>
+                    <img src="img/info/IMG_5624 1.png" alt="4">>
                 </div>
             </div>
         </div>
@@ -79,30 +83,29 @@
             <h1 class="str_h">Оставьте заявку и мы с вами свяжемся</h1>
             <button class="better_call_NIKASON">Оставить заявку</button>
         </div>
-    
-    </header>
-    <footer class="footer">
-        <div class="footer-inner">
-            <div>
-                ИП Колодезников-Матчитов Н.И.<br>
-                ИНН 143515646663</div>
-            <div>
-                <a href="#">Мастер-классы</a>
-                <a href="#">Мебель на заказ</a>
-            </div>
-            <div>
-                <a href="#">Контакты</a>
-                <a href="#">О нас</a>
-            </div>
-            <div>
-                <a href="#">Политика кофиденциальности</a>
-                <a href="#">Договор оферты</a>
-            </div>
-            <small class="footer-inner__link">
-                <a href="#"><img src="#" alt="inst"></a>
-                <a href="#"><img src="#" alt="wh"></a>
-            </small>
-            </div>
-    </footer> 
+        <footer class="footer">
+            <div class="footer-inner d_flex">
+                <div>
+                    ИП Колодезников-Матчитов Н.И.<br>
+                      ИНН 143515646663
+                </div>
+                <div>
+                    <a href="#" class="d_block">Мастер-классы</a>
+                    <a href="#" class="d_block">Мебель на заказ</a>
+                </div>
+                <div>
+                    <a href="#" class="d_block">Контакты</a>
+                    <a href="#" class="d_block">О нас</a>
+                </div>
+                <div>
+                    <a href="#" class="d_block">Политика кофиденциальности</a>
+                    <a href="#" class="d_block">Договор оферты</a>
+                </div>
+                <small class="footer-inner__link">
+                  <a href="#"><img src="img/inst.png" alt="inst"></a>
+                  <a href="#"><img src="img/wh.png" alt="wh"></a>
+                </small>
+              </div>
+        </footer>
 </body>
 </html>

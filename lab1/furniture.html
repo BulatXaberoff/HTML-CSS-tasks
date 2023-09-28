@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Мебель на заказ</title>
 </head>
 <body>
-    <header class = "header">
-        <div class="containe header__container">
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Мастер-классы</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Мебель на заказ</a>
-                    </li>
-                    <li class="header__item">
-                        <img src=".svg" class="header__logo-pic" alt="logo">
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">Контакты</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#!" class="header__link">О нас</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="header">
+        <div class="header__list d_flex justify_content_around">
+            <ul class="d_flex align_items_center">
+                <li class="header__item">
+                <a href="#" class="header__link">Мастер-классы</a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">Мебель на заказ</a>
+            </li>
+            </ul>
+            
+            <div class="header__item">
+            <img src="img/logo.svg" class="header__logo-pic" alt="logo">
+            </div>
+
+                <ul class="d_flex align_items_center">
+            <li class="header__item">
+                <a href="#" class="header__link">Контакты</a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">О нас</a>
+            </li>
+            </ul>
         </div>
+    </header>
             <div class="header_cont_image">
                 <a href="/" class="header__logo-link">
-                    <img src="./img/svg/odigo-logo.svg" alt="Столярная" class="header_cont_image-pic">
+                    <img src="img/furniture/IMG_6437 1.png" alt="Столярная" class="header_cont_image-pic">
                 </a>
                 <ul class="header_cont_image_list">
                     <li class="header__item">
@@ -45,7 +49,7 @@
                     </li>
                     
                 </ul>
-                <button class="header_cont_image-button"></button>
+                <button class="header_cont_image-button">Заказать мебель</button>
             </div>
 
             <div class="header_d1">
@@ -128,19 +132,19 @@
                 </h1>
                 <div class="header_d3_table">
                     <a href="/" class="header__logo-link">
-                        <img src="./img/svg/odigo-logo.svg" alt="Столярная" class="header_cont_image-pic">
+                        <img src="img/furniture/IMG_4714 1.png" alt="Столярная" class="header_cont_image-pic">
                     </a>
                     <a href="/" class="header__logo-link">
-                        <img src="./img/svg/odigo-logo.svg" alt="Столярная" class="header_cont_image-pic">
+                        <img src="img/furniture/IMG_4707 1.png" alt="Столярная" class="header_cont_image-pic">
                     </a>
                     <a href="/" class="header__logo-link">
-                        <img src="./img/svg/odigo-logo.svg" alt="Столярная" class="header_cont_image-pic">
+                        <img src="img/furniture/IMG_4708 1.png" alt="Столярная" class="header_cont_image-pic">
                     </a>
                     <a href="/" class="header__logo-link">
-                        <img src="./img/svg/odigo-logo.svg" alt="Столярная" class="header_cont_image-pic">
+                        <img src="img/furniture/IMG_4712 1.png" alt="Столярная" class="header_cont_image-pic">
                     </a>
                     <a href="/" class="header__logo-link">
-                        <img src="./img/svg/odigo-logo.svg" alt="Столярная" class="header_cont_image-pic">
+                        <img src="img/furniture/IMG_4715 1.png" alt="Столярная" class="header_cont_image-pic">
                     </a>
                 </div>
             </div>
@@ -152,32 +156,29 @@
                     <p class="headers_description">Оставить заявку</p>
                 </div>
             </div>
-           
-       
-    </header>
-    <footer class="footer">
-        <div class="footer-inner">
-            <div>
-                ИП Колодезников-Матчитов Н.И.<br>
-                  ИНН 143515646663
-            </div>
-            <div>
-                <a href="#">Мастер-классы</a>
-                <a href="#">Мебель на заказ</a>
-            </div>
-            <div>
-                <a href="#">Контакты</a>
-                <a href="#">О нас</a>
-            </div>
-            <div>
-                <a href="#">Политика кофиденциальности</a>
-                <a href="#">Договор оферты</a>
-            </div>
-            <small class="footer-inner__link">
-              <a href="#"><img src="#" alt="inst"></a>
-              <a href="#"><img src="#" alt="wh"></a>
-            </small>
-          </div>
-    </footer>
+            <footer class="footer">
+                <div class="footer-inner d_flex">
+                    <div>
+                        ИП Колодезников-Матчитов Н.И.<br>
+                          ИНН 143515646663
+                    </div>
+                    <div>
+                        <a href="#" class="d_block">Мастер-классы</a>
+                        <a href="#" class="d_block">Мебель на заказ</a>
+                    </div>
+                    <div>
+                        <a href="#" class="d_block">Контакты</a>
+                        <a href="#" class="d_block">О нас</a>
+                    </div>
+                    <div>
+                        <a href="#" class="d_block">Политика кофиденциальности</a>
+                        <a href="#" class="d_block">Договор оферты</a>
+                    </div>
+                    <small class="footer-inner__link">
+                      <a href="#"><img src="img/inst.png" alt="inst"></a>
+                      <a href="#"><img src="img/wh.png" alt="wh"></a>
+                    </small>
+                  </div>
+            </footer>
 </body>
 </html>
