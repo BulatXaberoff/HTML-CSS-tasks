@@ -3,6 +3,20 @@
   src: url('fonts/tenor.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/open.woff2') format('woff2');
+}
+
+.tenor-sans {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+
 body {
   margin: 0;
   background: #F3EFEA;
@@ -40,14 +54,6 @@ a{
 }
 .header__list{
   border-bottom: 1px double black; /* Параметры границы */
-}
-
-.tenor-sans {
-  font-family: 'Tenor Sans', sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
 }
 
 .d_flex {
@@ -148,4 +154,12 @@ a{
 .container_1_description_answer{
   margin:auto;
   border-bottom: 1px double black;
+}
+.family_NIKASON_pic{
+  width: 704px;
+  height: 475px;
+  flex-shrink: 0;
+}
+.footer{
+  background: #715B4B;
 }
