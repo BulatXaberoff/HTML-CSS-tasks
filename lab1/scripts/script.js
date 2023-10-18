@@ -1,22 +1,3 @@
-
-var lastBoatRabbits = function(totalRabbits) {
-    return totalRabbits % 6;
-  };
-
-const value = (totalRab)=> totalRab % 6
-  function foo(totalRab)
-{
-    let rab ='';
-    rab = totalRab>10?"Кроликов больше 10":"Кроликов меньше 10";
-    rab += ", а всего " + totalRab
-    console.log(rab)
-
-}
-// foo(20)
-// foo(2)
-
-
-
 function Palindrom(input_str){
     let correct_str = input_str.replace(" ","").toLowerCase();
     let len = correct_str.length;
@@ -39,30 +20,41 @@ function extractDigits(input_str) {
     }
     return parseInt(digits.join(''));
   }
-  console.log(extractDigits('2023 год'));            // 2023
-  console.log(extractDigits('1 каштан, 0.5 банана')); // 105
-  console.log(extractDigits('просто строка'));           // NaN
-  
+// console.log(extractDigits('2023 год'));            // 2023
+// console.log(extractDigits('1 каштан, 0.5 банана')); // 105
+// console.log(extractDigits('просто строка'));           // NaN
+function change_phrase(original_str, min_len, add_str) {
+  if (original_str.length >= min_len) {
+    return original_str;
+  } else {
+    
 
 
+    const недостающаяДлина = min_len - original_str.length;
+    const дополнение = add_str.slice(0, недостающаяДлина);
+    console.log(дополнение);
+    return дополнение + original_str;
+  }
+}
 
+// Примеры использования:
+// console.log(change_phrase('1', 2, '0'));      // '01'
+// console.log(change_phrase('1', 4, '0'));      // '0001'
+// console.log(change_phrase('q', 4, 'werty'));  // 'werq'
+// console.log(change_phrase('q', 4, 'we'));     // 'wweq'
+// console.log(change_phrase('qwerty', 4, '0')); // 'qwerty'
 
-// console.log(document.querySelector('.header__link_contacts'));
+function f(input_str, k) {
+  new_phrase = input_str[0];
+  str = input_str.slice(0,k+1);
+  for(let i = 0; i < str.length; i++){
+    new_phrase+=str[i];
+  }
+  return new_phrase;
+}
 
-// const button_contacts = document.querySelector('.header__link_contacts');
-
-// button_contacts.addEventListener('click', (evt)=>
-//   console.log('12344'));
-
-
-
-
-
-// const thumbnails = document.querySelector('.slides img');
-// const main_photo = document.querySelector('.main_photo');
-
-// for(let i = 0; i < thumbnails.length; i++){
-//     thumbnails[i].addEventListener('click',()=>main_photo.src=thumbnails[i].src )
-// }
-
+// Примеры использования:
+console.log(f("abcd", 3)); // "aabcd"
+console.log(f("abcd", 2)); // "aabc"
+console.log(f("abcd", 1)); // "aab"
 
