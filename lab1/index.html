@@ -3,38 +3,49 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
   <title>Мебель на заказ</title>
 </head>
 
 <body>
-  <header class="header ">
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="master.html" class="header__link">Мастер-классы</a>
-        </li>
-        <li class="header__item">
-          <a href="furniture.html" class="header__link">Мебель на заказ</a>
-        </li>
-      </ul>
-
-      <div class="nav__item">
-        <a href="index.html">
-          <img src="img/logo.svg" class="header__logo-pic" alt="logo">
-        </a>
+  <header class="header">
+    <div class="header__open">
+      <div class="header__hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#" class="header__link_contacts">Контакты</a>
-        </li>
-        <li class="nav__item">
-          <a href="info.html" class="header__link">О нас</a>
-        </li>
-      </ul>
-    </nav>
+    </div>
+    <div class="header__inner">
+      <div class="header__close">✖</div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="master.html" class="header__link">Мастер-классы</a>
+          </li>
+          <li class="header__item">
+            <a href="furniture.html" class="header__link">Мебель на заказ</a>
+          </li>
+        </ul>
+  
+        <div class="nav__item">
+          <a href="index.html">
+            <img src="img/logo.svg" class="header__logo-pic" alt="logo">
+          </a>
+        </div>
+  
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="header__link_contacts">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="info.html" class="header__link">О нас</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   
   <main class="container_main">
@@ -56,7 +67,7 @@
         </div>
       </div>
     </section>
-    <section class="brand">
+    <section class="padding_section brand">
       <div class="brand_description">
         <h2 class="str_h">NIKASON BRAND это</h2>
         <div class="brand_description_answers">
@@ -72,10 +83,22 @@
         </div>
       </div>
     </section>
-    <section class="product">
+    <section class="padding_section product">
       <div class="product_description">
         <h2 class="str_h">Более 10 лет мы производим</h2>
-        <table border="1">
+
+        <div class="grid_container">
+          <div class="grid_item">1</div>
+          <div class="grid_item">2</div>
+          <div class="grid_item">3</div>
+          <div class="grid_item">4</div>
+          <div class="grid_item">5</div>
+          <div class="grid_item">6</div>
+          <div class="grid_item">7</div>
+          <div class="grid_item">8</div>
+        </div>
+
+        <!--<table border="1">
           <tbody>
             <tr>
               <td>
@@ -114,27 +137,25 @@
               </td>
             </tr>
           </tbody>
-        </table>
+        </table>-->
       </div>
     </section>
-    <h2 class="str_h">NIKASON BRAND это семейная мастеркая</h2>
     <section class="family_NIKASON">
+      <h2 class="str_h">NIKASON BRAND это семейная мастеркая</h2>
       <div class="family_NIKASON_overview">
-        <div class="family_NIKASON_overview_pic">
-          <img src="img/index/i_rectangle 55.png" class="family_NIKASON_pic" alt="Семья">
-        </div>
+        <div class="family_NIKASON_overview_pic"></div>
         <div class="family_NIKASON_overview_description">
-          <p>Саргылана и Никита Колодезниковы-Матчитовы</p>
+          <p class="family_NIKASON_overview_description_heading">Саргылана и Никита Колодезниковы-Матчитовы</p>
           <div class="_overview_inner_description">
-            <p>Саргылана - рестовратор-декоратор, преображает и дарит вторую жизнь старой мебели.</p>
-            <p>Никита - мастер по дереву, вся мебель делается его умелыми руками.</p>
+            <p class="family_NIKASON_overview_description_text">Саргылана - рестовратор-декоратор, преображает и дарит вторую жизнь старой мебели.</p>
+            <p class="family_NIKASON_overview_description_text">Никита - мастер по дереву, вся мебель делается его умелыми руками.</p>
           </div>
           <button>Подробнее о нас</button>
         </div>
       </div>
     </section>
-    <h2 class="str_h">Посмотрите видео о нас</h2>
-    <section class="container_main">
+    <section class="container_main video">
+      <h2 class="str_h">Посмотрите видео о нас</h2>
       <iframe id="youtubeiframe417077694" width="100%" height="540px"
         src="https://youtube.com/embed/MlaGpRXoMPc?rel=0&amp;fmt=18&amp;html5=1&amp;showinfo=0" frameborder="0"
         allowfullscreen="" style="height: 652.5px;"></iframe>
@@ -150,8 +171,8 @@
             <h3>Мебель на заказ</h3>
             <div class="inner_description">
               <p>Мебель под заказ по индивидуальным размерам это гарантия отличного качества, долговечность, экологичность
-                и эксклюзивность наших изделий.
-                Возможность создания своего неповторимого стиля, уникальность и неповторимость каждого изделия.</p>
+                и эксклюзивность наших изделий.</p>
+                <p>Возможность создания своего неповторимого стиля, уникальность и неповторимость каждого изделия.</p>
             </div>
             <button>Заказать мебель</button>
           </div>
@@ -179,6 +200,8 @@
       </div>
     </section>
   
+    <h2 class="str_h mobile_heading">Гарантия качества мебели от NIKASON BRAND</h2>
+
     <div class="card">
       <div class="card-border">
         <div class="card-border_inner">
@@ -194,21 +217,23 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <div>
-        ИП Колодезников-Матчитов Н.И.<br>
-        ИНН 143515646663
-      </div>
-      <div class="links">
-        <a href="#" class="link">Мастер-классы</a>
-        <a href="#" class="link">Мебель на заказ</a>
-      </div>
-      <div class="links">
-        <a href="#" class="link">Контакты</a>
-        <a href="#" class="link">О нас</a>
-      </div>
-      <div class="links">
-        <a href="#" class="link">Политика кофиденциальности</a>
-        <a href="#" class="link">Договор оферты</a>
+      <div class="footer-text">
+        <div class="info">
+          <p>ИП Колодезников-Матчитов Н.И.</p>
+          <p>ИНН 143515646663</p>
+        </div>
+        <div class="links">
+          <a href="#" class="link">Мастер-классы</a>
+          <a href="#" class="link">Мебель на заказ</a>
+        </div>
+        <div class="links">
+          <a href="#" class="link">Контакты</a>
+          <a href="#" class="link">О нас</a>
+        </div>
+        <div class="links">
+          <a href="#" class="link">Политика кофиденциальности</a>
+          <a href="#" class="link">Договор оферты</a>
+        </div>
       </div>
       <small class="footer-inner__link">
         <a href="#"><img src="img/tg_white.svg" alt="inst"></a>

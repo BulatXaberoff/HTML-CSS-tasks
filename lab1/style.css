@@ -17,6 +17,7 @@
   font-family: 'Open Sans Bold';
   src: url('fonts/OpenSans-Bold.ttf') format('ttf');
 }
+
 .tenor-sans {
   font-family: 'Tenor Sans', sans-serif;
 }
@@ -86,6 +87,13 @@ button {
   margin-top: 74px;
   margin-left: 411px;
   text-align: right;
+}
+
+.header__close {
+  text-align: right;
+  padding: 15px 15px 0 0;
+  font-size: 20px;
+  display: none;
 }
 
 .nav{
@@ -185,7 +193,7 @@ header nav, .footer-inner{
 }
 .card {
   width: 80%;
-  border: 6px solid green;
+  border: 6px solid #a1b29f;
   padding: 7px;
   margin: 50px auto;
   height: 600px;
@@ -305,6 +313,23 @@ header nav, .footer-inner{
   width: 30%;
 }
 
+
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.grid_item {
+  outline: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
 .family_NIKASON_pic {
   width: 704px;
   flex-shrink: 0;
@@ -318,7 +343,7 @@ header nav, .footer-inner{
 }
 .footer-inner{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .footer a {
   color: #fff;
@@ -459,12 +484,14 @@ header nav, .footer-inner{
   width: 60%;
   justify-content: center;
 }
-.family_NIKASON_overview_description p {
+.family_NIKASON_overview_description_heading {
+  font-family: 'Tenor Sans', sans-serif;
+}
+.family_NIKASON_overview_description p.family_NIKASON_overview_description_text {
   margin: 0;
   width: 60%;
   font-size: 30px;
   font-weight: bold;
-  font-family: 'Tenor Sans', sans-serif;
 }
 .services h2{
   margin-top: 200px;
@@ -482,13 +509,23 @@ header nav, .footer-inner{
 
 .family_NIKASON_overview_pic {
   width: 40%;
+  background: url("img/index/i_rectangle 55.png");
+  background-size: cover;
 }
 
-.family_NIKASON_overview_pic img {
-  width: 100%;
+
+.footer-text {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
 }
 
-
+.footer .info p {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 0;
+}
 
 .footer .links a {
   margin-bottom: 10px;

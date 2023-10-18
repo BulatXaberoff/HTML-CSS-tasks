@@ -3,38 +3,49 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
   <title>Мастер-классы</title>
 </head>
 
 <body>
   <header class="header">
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="master.html" class="header__link">Мастер-классы</a>
-        </li>
-        <li class="header__item">
-          <a href="furniture.html" class="header__link">Мебель на заказ</a>
-        </li>
-      </ul>
-
-      <div class="nav__item">
-        <a href="index.html">
-          <img src="img/logo.svg" class="header__logo-pic" alt="logo">
-        </a>
+    <div class="header__open">
+      <div class="header__hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#" class="header__link">Контакты</a>
-        </li>
-        <li class="nav__item">
-          <a href="info.html" class="header__link">О нас</a>
-        </li>
-      </ul>
-    </nav>
+    </div>
+    <div class="header__inner">
+      <div class="header__close">✖</div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="master.html" class="header__link">Мастер-классы</a>
+          </li>
+          <li class="header__item">
+            <a href="furniture.html" class="header__link">Мебель на заказ</a>
+          </li>
+        </ul>
+  
+        <div class="nav__item">
+          <a href="index.html">
+            <img src="img/logo.svg" class="header__logo-pic" alt="logo">
+          </a>
+        </div>
+  
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="header__link_contacts">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="info.html" class="header__link">О нас</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="container_main">
@@ -173,21 +184,23 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <div>
-        ИП Колодезников-Матчитов Н.И.<br>
-        ИНН 143515646663
-      </div>
-      <div class="links">
-        <a href="#" class="d_block">Мастер-классы</a>
-        <a href="#" class="d_block">Мебель на заказ</a>
-      </div>
-      <div class="links">
-        <a href="#" class="d_block">Контакты</a>
-        <a href="#" class="d_block">О нас</a>
-      </div>
-      <div class="links">
-        <a href="#" class="d_block">Политика кофиденциальности</a>
-        <a href="#" class="d_block">Договор оферты</a>
+      <div class="footer-text">
+        <div class="info">
+          <p>ИП Колодезников-Матчитов Н.И.</p>
+          <p>ИНН 143515646663</p>
+        </div>
+        <div class="links">
+          <a href="#" class="link">Мастер-классы</a>
+          <a href="#" class="link">Мебель на заказ</a>
+        </div>
+        <div class="links">
+          <a href="#" class="link">Контакты</a>
+          <a href="#" class="link">О нас</a>
+        </div>
+        <div class="links">
+          <a href="#" class="link">Политика кофиденциальности</a>
+          <a href="#" class="link">Договор оферты</a>
+        </div>
       </div>
       <small class="footer-inner__link">
         <a href="#"><img src="img/tg_white.svg" alt="inst"></a>

@@ -1,0 +1,277 @@
+@media all and (min-width: 320px) and (max-width: 600px) {
+
+  .header .nav,
+  .brand_description_answers,
+  .header .nav .nav__list,
+  .family_NIKASON_overview,
+  .services .centered_div,
+  .footer-text {
+    flex-direction: column;
+  }
+
+  .home_page,
+  .footer-inner {
+    flex-direction: column-reverse;
+  }
+
+
+  
+  .header {
+    border-bottom: 0;
+  }
+
+  .header .header__inner {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #cbc4bd;
+    height: 100%;
+    width: 250px;
+    transition: .3s;
+    transform: translateX(100%);
+  }
+
+  .header .nav .nav__item img {
+    margin: 0 30px;
+  }
+
+  .header .nav .nav__list {
+    width: 100%;
+    align-items: baseline;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header .nav .nav__list:first-child {
+    order: 1;
+  }
+
+  .header .nav .nav__list:last-child {
+    margin-top: 10px;
+  }
+
+  .header .nav .nav__list li {
+    margin: 5px 0;
+  }
+
+  .header .nav .nav__list li a {
+    margin: 0 30px;
+  }
+
+  .header__close {
+    display: block;
+  }
+
+  .header__open {
+    text-align: right;
+    padding: 20px 30px;
+  }
+
+  .header__hamburger {
+    display: inline-block;
+  }
+
+  .header__hamburger div {
+    height: 3px;
+    width: 100px;
+    background: black;
+    margin: 5px 0;
+  }
+
+
+
+  .container_main {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .padding_section {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+
+
+  .home_page_description {
+    width: 85%;
+    margin: 0;
+  }
+
+  .home_page_image {
+    width: 100%;
+  }
+
+  .str_h {
+    font-size: 28px;
+    font-weight: 100;
+  }
+
+  .container_desription_button {
+    margin: 30px auto;
+    display: block;
+  }
+
+  .container_desription_logo_ref {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .container_desription_logo_ref a {
+    margin: 0 10px;
+  }
+
+
+
+  .brand_description {
+    padding: 0;
+  }
+
+  .brand_description .str_h {
+    width: 70%;
+    margin-bottom: 40px;
+  }
+
+  .brand_description_answer {
+    width: 100%;
+    padding: 0;
+    margin: 15px 0;
+  }
+
+  .brand_description_answers {
+    margin-top: 40px;
+  }
+
+  .brand_description_answer p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  .grid_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .family_NIKASON .str_h {
+    width: 85%;
+    margin: 40px auto;
+    margin-top: 0;
+  }
+
+  .family_NIKASON_overview_pic {
+    width: 100%;
+    height: 85vw;
+    background-position-x: center;
+  }
+
+  .family_NIKASON_overview_description {
+    width: 100%;
+    background: none;
+    padding: 30px;
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+
+  .family_NIKASON_overview_description_heading {
+    font-size: 24px;
+    font-weight: 100;
+    width: 100%;
+    margin: 0;
+  }
+
+  ._overview_inner_description {
+    margin: 0;
+  }
+
+  .family_NIKASON_overview_description p.family_NIKASON_overview_description_text {
+    width: 100%;
+    font-size: 17px !important;
+    font-weight: 400;
+    margin: 15px 0;
+  }
+
+  .family_NIKASON_overview_description button {
+    margin-top: 20px;
+  }
+
+
+  .video .str_h, .services .str_h, .mobile_heading {
+    width: 85%;
+    margin: 40px auto;
+  }
+
+  .video iframe {
+    height: 55vw !important;
+  }
+
+
+
+  .services .centered_div img {
+    width: 100%;
+  }
+
+  .services .centered_div .services-descr {
+    font-weight: 100;
+    margin-top: 50px;
+    padding: 0 30px 100px 30px;
+  }
+
+  .services .centered_div .services-descr p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .services .centered_div .services-descr button {
+    margin-top: 30px;
+  }
+  
+
+
+  .card {
+    height: 300px;
+  }
+
+  .card .str_h {
+    display: none;
+  }
+
+  .card .card-border {
+    align-items: flex-start;
+  }
+
+  .card .card-border .card-border_inner {
+    width: 80%;
+  }
+
+  .card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  .card .card-border .card-border_inner img {
+      right: 40px;
+      bottom: 20px;
+      width: 70px;
+  }
+
+
+
+  .footer-inner .links, .footer-inner .info p {
+    font-size: 14px;
+  }
+
+  .footer-inner__link {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-inner__link img {
+    width: 40px;
+  }
+
+  .footer-text {
+    width: 100%;
+  }
+
+}
