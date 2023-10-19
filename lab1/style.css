@@ -391,7 +391,11 @@ header nav, .footer-inner{
 
 .history_info_text h2{
   color: #000;
-  font-size: 24px !important;
+  font-family: Tenor Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
 }
 
 .history_info_text p{
@@ -401,6 +405,14 @@ header nav, .footer-inner{
 
 .history_info_text .base_txt{
   margin-bottom: 50px;
+}
+
+.history_philosophy_text{
+  margin: 30px;
+}
+.history_philosophy p{
+  text-align: right;
+    margin: 40px;
 }
 
 .history_description_philosophy .str_h{
@@ -415,10 +427,11 @@ header nav, .footer-inner{
 }
 .history_philosophy .str_h{
   margin-top: 200px;
+  text-align: left;
 }
-
 .history_description_news .str_h{
   margin-top: 200px;
+  text-align: left;
 }
 .history_description_news p{
   margin-bottom: 100px;
@@ -440,7 +453,7 @@ header nav, .footer-inner{
   font-weight: 100;
   margin-top: 200px;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: left;
 }
 .application_button{
   text-align: center;
@@ -452,6 +465,8 @@ header nav, .footer-inner{
 }
 .str_h {
   margin: 50px 0;
+  font-weight: 100;
+  text-align: center;
 }
 
 
@@ -784,5 +799,13 @@ header nav, .footer-inner{
 .history_header {
   text-align: center;
 }
-
-
+  .history_block_pic{
+    width: 100%;
+    height: 915px;
+    background: url('img/index/i_rectangle 55.png');
+    background-size: cover;
+  }
+.history_header_description{
+  width: 100%;
+    margin: 0
+}
