@@ -57,4 +57,3 @@ function checkStringLength(str, maxLength) {
 // console.log(checkStringLength('проверяемая', 20)); // true
 // console.log(checkStringLength('проверяемая строка', 18)); // true
 // console.log(checkStringLength('проверяемая строка', 10)); // false
-
