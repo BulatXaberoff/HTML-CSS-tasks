@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=dev  ice-width, initial-scale=1, minimum-scale=1.0">
+  <link rel="stylesheet" href="lab.css">
+  <title>Интернет-магазин</title>
+</head>
+
+<body>
+  <div class="modal_wrapper add" style="display: none;">
+    <div class="modal">
+      <div class="modal_close" onclick="this.closest('.modal_wrapper').style.display = 'none'">✖</div>
+      <p class="modal_heading">Добавление товара</p>
+      <div id="cart_content"></div>
+      <input type="button" id="open_cart" value="Перейти в корзину" />
+    </div>
+  </div>
+
+  <div class="modal_wrapper cart" style="display: none;">
+    <div class="modal">
+      <div class="modal_close" onclick="this.closest('.modal_wrapper').style.display = 'none'">✖</div>
+      <p class="modal_heading">Корзина</p>
+      <div id="cart_products"></div>
+      <input type="button" class="send" value="Оформить заказ" />
+    </div>
+  </div>
+  
+  <div class="img_wrapper" style="display: none;">
+    <div class="content">
+      <div class="modal_close" onclick="this.closest('.img_wrapper').style.display = 'none'">✖</div>
+      <div id="image">
+
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header_content">
+      <div class="header_logo">
+        <img src="pic/logo.png" alt="logo" />
+      </div>
+      <div class="header_menu">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Категории</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="products">
+      <h2>Каталог товаров</h2>
+      <div class="product_list">
+        <div class="product" id="product-1">
+          <div class="product_image">
+            <img src="pic/1.jpg" alt="Товар 1" />
+          </div>
+          <div class="product_info">
+            <p class="product_name">Samsung Galaxy S1</p>
+            <p class="product_description">Мобильный телефон с 1 ГБ оперативной памяти</p>
+            <p class="product_price">15.000 руб.</p>
+            <button class="to_cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" id="product-2">
+          <div class="product_image">
+              <img src="pic/2.jpg" alt="Товар 1" />
+          </div>
+          <div class="product_info">
+            <p class="product_name">Samsung Galaxy S2</p>
+            <p class="product_description">Мобильный телефон с 2 ГБ оперативной памяти</p>
+            <p class="product_price">20.000 руб.</p>
+            <button class="to_cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" id="product-3">
+          <div class="product_image">
+              <img src="pic/3.jpg" alt="Товар 1" />
+          </div>
+          <div class="product_info">
+            <p class="product_name">Samsung Galaxy S3</p>
+            <p class="product_description">Мобильный телефон с 3 ГБ оперативной памяти</p>
+            <p class="product_price">25.000 руб.</p>
+            <button class="to_cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" id="product-4">
+          <div class="product_image">
+              <img src="pic/4.jpg" alt="Товар 1" />
+          </div>
+          <div class="product_info">
+            <p class="product_name">Samsung Galaxy S4</p>
+            <p class="product_description">Мобильный телефон с 4 ГБ оперативной памяти</p>
+            <p class="product_price">34.000 руб.</p>
+            <button class="to_cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" id="product-5">
+          <div class="product_image">
+              <img src="pic/5.jpg" alt="Товар 1" />
+          </div>
+          <div class="product_info">
+            <p class="product_name">Samsung Galaxy S5</p>
+            <p class="product_description">Мобильный телефон с 5 ГБ оперативной памяти</p>
+            <p class="product_price">46.000 руб.</p>
+            <button class="to_cart">В корзину</button>
+          </div>
+        </div>
+        <div class="product" id="product-6">
+          <div class="product_image">
+              <img src="pic/6.jpg" alt="Товар 1" />
+          </div>
+          <div class="product_info">
+            <p class="product_name">Samsung Galaxy S6</p>
+            <p class="product_description">Мобильный телефон с 6 ГБ оперативной памяти</p>
+            <p class="product_price">68.000 руб.</p>
+            <button class="to_cart">В корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="new">
+      <h2>Акции нашего магазина</h2>
+      <div class="new_offers">
+          <div class="offer">
+              <img src="pic/5.jpg" alt="Акция" />
+              <div class="offer_info">
+                  <p class="offer_heading">Акция недели!</p>
+                  <p class="offer_description">Купи телефон Samsung Galaxy S5 и получи защитное стекло в подарок</p>
+              </div>
+          </div>
+          <div class="offer">
+              <img src="pic/6.jpg" alt="Акция" />
+              <div class="offer_info">
+                  <p class="offer_heading">Акция недели!</p>
+                  <p class="offer_description">Купи телефон Samsung Galaxy S6 и получи защитное стекло в подарок</p>
+              </div>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_info">
+        <div class="footer_store_info">
+            <p>Адрес: ул. Уличная, д. 1</p>
+            <p>8 (917) 456-78-90</p>
+        </div>
+        <div class="footer_social">
+            <a href="#">VK</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

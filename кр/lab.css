@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.header_content .header_logo {
+    width: 30%;
+    text-align: center;
+}
+
+.header_content .header_menu {
+    width: 70%;
+}
+
+.header_content ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_logo img {
+    width: 200px;
+}
+
+.products .product_list, #cart_products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 26%;
+    margin: 10px 0;
+}
+
+.product, h2 {
+    text-align: center;
+}
+
+h2 {
+    margin: 40px 0;
+}
+
+.product_name {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.product_price {
+    color: green;
+}
+
+.new_offers, .new_offers .offer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.new_offers img {
+    width: 100px;
+}
+
+.new_offers .offer_info {
+    padding-left: 20px;
+}
+
+.new_offers .offer_heading {
+    font-weight: 700;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: blue;
+    color: white;
+    margin-top: 40px;
+    padding: 0 30px;
+}
+
+.footer_info .footer_social a {
+    color: white;
+    margin: 0 10px;
+}
+
+.modal_wrapper, .img_wrapper {
+  position: fixed;
+  background: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.modal_wrapper .modal {
+  width: 50%;
+  background: #fff;
+  margin: 50px auto;
+  padding: 20px 0;
+  position: relative;
+  border-radius: 5px;
+}
+
+.img_wrapper .content {
+  width: fit-content;
+  background: #fff;
+  margin: 50px auto;
+  padding: 30px;
+  position: relative;
+  border-radius: 5px
+}
+
+.modal_wrapper .modal .modal_heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+}
+
+.modal_wrapper .modal input[type="text"] {
+  display: block;
+    width: 80%;
+    margin: 25px auto;
+    border: 0;
+    box-shadow: 0 0 7px #b1b1b1;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 0 10px;
+}
+
+.modal_wrapper .modal input[type="button"] {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  background: blue;
+  border: 0;
+  padding: 7px;
+  font-size: 18px;
+  font-weight: 100;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.modal_wrapper .modal input[type="button"]:hover {
+  background: #7070b3;
+}
+
+.modal_wrapper .modal_close {
+  position: absolute;
+  right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.img_wrapper .modal_close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal_wrapper .product {
+  margin: 20px auto;
+}
+
+.modal_wrapper.cart .modal {
+  max-height: auto;
+  overflow-y: auto;
+}
